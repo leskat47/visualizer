@@ -1,0 +1,62 @@
+body {
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 10pt;
+}
+
+circle {
+  fill: #fff;
+  stroke: steelblue;
+  stroke-width: 3px;
+}
+
+button.active {
+  background-color: lightblue;
+  font-weight: bold;
+}
+
+button#reset {
+  border-color: red;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.node text { font: 12px sans-serif; }
+
+.node--internal text {
+  text-shadow: 0 1px 0 #fff, 0 -1px 0 #fff, 1px 0 0 #fff, -1px 0 0 #fff;
+}
+
+.link {
+  fill: none;
+  stroke: #ccc;
+  stroke-width: 2px;
+}
+
+#graph {
+  float: left;
+}
+circle.to-find {
+  stroke: red;
+  stroke-width: 3px;
+  fill: white;
+}
+circle.to-check {
+  fill: lightblue
+}
+circle.selected {
+  fill: steelblue;
+  -webkit-transition: fill .25s;
+}
+circle.done {
+  fill: white;
+  stroke: lightgray;
+  stroke-width: 3px;
+  -webkit-transition: fill 1s;
+}
+circle.found {
+  stroke: red;
+  fill: red;
+}
+text {
+  text-anchor: middle;
+}
